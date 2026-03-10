@@ -1,12 +1,12 @@
 body {
   font-family: Times, Arial;
-  line-height: 1;
+  line-height: 1.5;
   margin: 0;
+  background-color:#50c878
 }
 
 header nav {
-  background: #2c3e50;
-  padding: 1rem 0;
+  background:#bc1849;
 }
 
 header nav ul {
@@ -14,9 +14,24 @@ header nav ul {
   display: flex;
   justify-content: center;
   margin: 0;
-  padding: 0;
+  padding: 10px;
 }
 
 header nav li {
-  margin: 0 20px;
+  margin: 20px;
+  border: ridge;
+  background-color: #50c878;
+}
+
+header nav a {
+  color:#bc1849;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.5s ease;
+  display: block;
+  padding: 20px;
+}
+
+header nav a:hover {
+  color: #ffffff;
 }
