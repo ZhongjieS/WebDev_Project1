@@ -4,3 +4,8 @@ body {
   margin: 0;
   background-color: #f4f4f4;
 }
+
+nav ul {
+  list-style: none;
+  background: black;
+}
