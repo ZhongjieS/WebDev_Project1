@@ -8,4 +8,11 @@ body {
 nav ul {
   list-style: none;
   background: black;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0;
 }
