@@ -5,26 +5,9 @@ body {
   background-color: #f4f4f4;
 }
 
-nav ul {
-  list-style: none;
-  background: black;
-  padding: 0;
-  margin: 0;
-  display: flex;
+header nav {
+  background: #2c3e50;
+  padding: 1rem 0;
 }
-
-nav li {
-  margin: 0;
-}
-
-nav a {
-  display: block;
-  padding: 15px 20px;
-  color: white;
-  text-decoration: none;
-}
-
-nav a:hover {
-  background: white;
-}
-
+  
+  
