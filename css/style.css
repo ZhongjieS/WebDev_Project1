@@ -12,7 +12,7 @@ header nav ul {
   justify-content: center;
   margin: 0;
   padding: 0.5rem;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgb(0, 0, 0);
 }
 
 header nav li {
@@ -69,8 +69,8 @@ section {
 }
 
 .index-h1{
-  background-color: black;
-  color: white
+  background-color:rgba(255, 255, 255, 0.5);
+  color: rgb(0, 0, 0)
 }
 
 .index-list{
