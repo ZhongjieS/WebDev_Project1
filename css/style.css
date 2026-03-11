@@ -1,3 +1,4 @@
+/*---Global---*/
 body {
   font-family: 'Tinos', serif;
   line-height: 1.5;
@@ -23,20 +24,21 @@ header nav li {
 }
 
 header nav a {
+  font-family: Arial, sans-serif;
   color:#bc1849;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.5s ease;
   display: block;
-  padding: 20px;
+  padding: 10px;
 }
 
 header nav a:hover {
   color: #ffffff;
 }
 
-h1, h2, h3 {
-  margin-top: 3rem;
+h2, h3 {
+  margin-top: 0;
   color: #222;
 }
 
@@ -50,12 +52,40 @@ main {
   padding: 1rem;
 }
 
+section {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+  border-left: 0.2rem solid #bc1849;
+}
+
+/*----About me----*/
 .index-main {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+.dog-photo {
+  border: 0.5rem solid white;
+  transform: rotate(-2deg);
+  width: 20rem
+}
+
+.index-h1{
+  background-color: black;
+  color: white
+}
+
+.index-list{
+  list-style: square;
+}
+
+.index-list li::marker{
+  color:#bc1849
+}
+
+/*----Resume----*/
 .resume-main {
   width: 800px;
   margin: 2rem auto;
@@ -64,15 +94,21 @@ main {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-section {
-  background: rgba(255, 255, 255, 0.5);
-  padding: 1rem 1.5rem;
-  margin-bottom: 2rem;
-  border-left: 0.2rem solid #bc1849;
+.resume-h1{
+  color: #222
 }
 
-.dog-photo {
-  border: 0.5rem solid white;
-  transform: rotate(-2deg);
-  width: 20rem
+.resume-description{
+  border: solid;
+  text-align: center;
+  font-style: italic;
+}
+
+.resume-list li::marker{
+  content: "- ";
+  color:#bc1849;
+}
+
+.h2-description{
+  text-decoration: underline;
 }
