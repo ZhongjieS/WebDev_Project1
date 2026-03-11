@@ -1,5 +1,5 @@
 body {
-  font-family: Times, Arial;
+  font-family: 'Tinos', serif;
   line-height: 1.5;
   margin: 0;
   background-color:#50c878
@@ -19,7 +19,7 @@ header nav li {
   border: ridge;
   background-color: #50c878;
   width: 150px; 
-  text-align: center;  text-align: center;
+  text-align: center;
 }
 
 header nav a {
@@ -32,5 +32,20 @@ header nav a {
 }
 
 header nav a:hover {
-  color: #ffffff;
+  color: #000000;
+}
+
+h1, h2, h3 {
+  margin-top: 3rem;
+  color: #222;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+main {
+  padding: 2rem;
 }
