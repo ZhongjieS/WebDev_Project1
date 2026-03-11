@@ -42,14 +42,10 @@ h2, h3 {
   color: #222;
 }
 
-img, iframe {
+img{
   max-width: 100%;
   height: auto;
   border-radius: 20px;
-}
-
-main {
-  padding: 1rem;
 }
 
 section {
@@ -109,6 +105,35 @@ section {
   color:#bc1849;
 }
 
-.h2-description{
+.resume-h2description{
   text-decoration: underline;
 }
+
+/*----Recipe----*/
+.mapo-bulletpoint li::marker{
+  content: "\25C6  ";
+  color: #bc1849;
+}
+
+iframe {
+  width: 100%; 
+  height: 500px;
+  border: 0;
+}
+
+.recipe-main {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ul-border{
+  border-style: groove;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  word-wrap: break-word; 
+  overflow-wrap: break-word;
+}
+
