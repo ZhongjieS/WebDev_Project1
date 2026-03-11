@@ -10,8 +10,8 @@ header nav ul {
   display: flex;
   justify-content: center;
   margin: 0;
-  padding: 1rem;
-  background: #bc1849;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.5);
 }
 
 header nav li {
@@ -32,7 +32,7 @@ header nav a {
 }
 
 header nav a:hover {
-  color: #000000;
+  color: #ffffff;
 }
 
 h1, h2, h3 {
@@ -40,12 +40,39 @@ h1, h2, h3 {
   color: #222;
 }
 
-img {
+img, iframe {
   max-width: 100%;
   height: auto;
   border-radius: 20px;
 }
 
 main {
-  padding: 2rem;
+  padding: 1rem;
+}
+
+.index-main {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.resume-main {
+  width: 800px;
+  margin: 2rem auto;
+  background: white;
+  padding: 1rem 2rem;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+section {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+  border-left: 0.2rem solid #bc1849;
+}
+
+.dog-photo {
+  border: 0.5rem solid white;
+  transform: rotate(-2deg);
+  width: 20rem
 }
