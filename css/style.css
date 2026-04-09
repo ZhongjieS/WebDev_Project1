@@ -1,9 +1,15 @@
 /*---Global---*/
 body {
-  font-family: 'Tinos', serif;
+  font-family: 'Tinos', 'Georgia';
   line-height: 1.5;
   margin: 0;
   background-color:#50c878
+}
+
+body > header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 header nav ul {
@@ -24,7 +30,7 @@ header nav li {
 }
 
 header nav a {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', 'Georgia';
   color:#bc1849;
   text-decoration: none;
   font-weight: bold;
@@ -63,9 +69,11 @@ section {
 }
 
 .dog-photo {
+  float: left;
   border: 0.5rem solid white;
   transform: rotate(-2deg);
-  width: 20rem
+  width: 20rem;
+  margin: 30px;
 }
 
 .index-h1{
@@ -126,6 +134,7 @@ iframe {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 
 .ul-border{
   border-style: groove;
