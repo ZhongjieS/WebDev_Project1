@@ -153,6 +153,7 @@ li {
 /*---Star Rating---*/
 .rating-container {
   display: flex;
+  flex-direction: column;
   align-items: center; 
   gap: 20px; 
   margin-top: 1.5rem;
