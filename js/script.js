@@ -30,5 +30,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       });
     });
+    function updateStars(stars, value) {
+      stars.forEach(star => {
+        var starValue = star.getAttribute('data-value');
+        if (starValue <= value) {
+          star.classList.add('selected');
+        } else {
+          star.classList.remove('selected');
+        }
+      });
+    }
   }
 });
