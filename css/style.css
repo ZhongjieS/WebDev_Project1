@@ -15,18 +15,23 @@ body > header {
 header nav ul {
   list-style: none;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row; /* Forces the buttons into a horizontal line */
+  flex-wrap: wrap; /* Allows buttons to drop to a second line if the phone is very narrow */
+  align-items: center; 
+  justify-content: center; 
   margin: 0;
   padding: 0.5rem;
   background: rgb(0, 0, 0);
+  width: 100%; 
+  box-sizing: border-box; 
 }
 
 header nav li {
-  margin: 20px;
+  margin: 15px; /* Reduced margin so they fit next to each other */
   border: ridge;
   background-color: #50c878;
-  width: 150px; 
+  width: 120px; /* CHANGED: Set a fixed width so they are all identical */
+  min-width: 80px; /* Keeps them from getting too squished */
   text-align: center;
 }
 
