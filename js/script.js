@@ -40,5 +40,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     }
+    function addHoverState(stars, value) {
+      stars.forEach(star => {
+        var starValue = star.getAttribute('data-value');
+        if (starValue <= value) {
+          star.classList.add('hover');
+        } else {
+          star.classList.remove('hover');
+        }
+      });
+    }
   }
 });
