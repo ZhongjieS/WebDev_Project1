@@ -227,3 +227,22 @@ li {
     transform: rotate(-1deg);
   }
 }
+
+@media (min-width: 900px) {
+  .dog-photo {
+    float: left;
+    width: 20rem;
+    transform: rotate(-2deg);
+    margin: 30px;
+  }
+  
+  .resume-main {
+    width: 800px;
+    margin: 2rem auto;
+  }
+  
+  .rating-container {
+    flex-direction: row;
+    align-items: center;
+  }
+}
