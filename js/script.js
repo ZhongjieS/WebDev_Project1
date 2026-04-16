@@ -50,5 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     }
+    function removeHoverState(stars) {
+      stars.forEach(star => star.classList.remove('hover'));
+    }
   }
 });
