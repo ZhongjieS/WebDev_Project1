@@ -10,15 +10,20 @@ body > header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  width: 100%; 
+}
+
+header nav {
+  width: 100%;
 }
 
 header nav ul {
   list-style: none;
   display: flex;
-  flex-direction: row; /* Forces the buttons into a horizontal line */
-  flex-wrap: wrap; /* Allows buttons to drop to a second line if the phone is very narrow */
+  flex-direction: row; 
+  flex-wrap: wrap;
   align-items: center; 
-  justify-content: center; 
+  justify-content: center;
   margin: 0;
   padding: 0.5rem;
   background: rgb(0, 0, 0);
@@ -27,11 +32,10 @@ header nav ul {
 }
 
 header nav li {
-  margin: 15px; /* Reduced margin so they fit next to each other */
+  margin: 15px;
   border: ridge;
   background-color: #50c878;
-  width: 120px; /* CHANGED: Set a fixed width so they are all identical */
-  min-width: 80px; /* Keeps them from getting too squished */
+  width: 120px; 
   text-align: center;
 }
 
@@ -50,7 +54,7 @@ header nav a:hover {
 }
 
 h1 {
-  font-size: 1.8rem;
+  font-size: 1.8rem; 
 }
 
 h2, h3 {
@@ -69,83 +73,88 @@ section {
   padding: 1rem 1.5rem;
   margin-bottom: 2rem;
   border-left: 0.2rem solid #bc1849;
+  box-sizing: border-box;
 }
 
 /*----About me----*/
 .index-main {
-  width: 90%;
+  width: 95%; 
   max-width: 1200px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .dog-photo {
-  float: left;
+  float: none; 
   border: 0.5rem solid white;
-  transform: rotate(-2deg);
-  width: 20rem;
-  margin: 30px;
+  transform: none; 
+  width: 50%; 
+  margin: 10px 0;
+  box-sizing: border-box;
 }
 
-.index-h1{
+.index-h1 {
   background-color:rgba(255, 255, 255, 0.5);
   color: rgb(0, 0, 0)
 }
 
-.index-list{
+.index-list {
   list-style: square;
 }
 
-.index-list li::marker{
+.index-list li::marker {
   color:#bc1849
 }
 
 /*----Resume----*/
 .resume-main {
-  width: 800px;
-  margin: 2rem auto;
+  width: 90%; 
+  margin: 1rem auto; 
   background: white;
-  padding: 1rem 2rem;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
 }
 
-.resume-h1{
+.resume-h1 {
   color: #222
 }
 
-.resume-description{
+.resume-description {
   border: solid;
   text-align: center;
   font-style: italic;
 }
 
-.resume-list li::marker{
+.resume-list li::marker {
   content: "- ";
   color:#bc1849;
 }
 
-.resume-h2description{
+.resume-h2description {
   text-decoration: underline;
 }
 
 /*----Recipe----*/
-.mapo-bulletpoint li::marker{
+.mapo-bulletpoint li::marker {
   content: "\25C6  ";
   color: #bc1849;
 }
 
 iframe {
   width: 100%; 
-  height: 300px;
+  height: 300px; 
   border: 0;
 }
 
 .recipe-main {
-  width: 95%;
+  width: 95%; 
   max-width: 1200px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
-.ul-border{
+.ul-border {
   border-style: groove;
 }
 
@@ -158,30 +167,37 @@ li {
 /*---Star Rating---*/
 .rating-container {
   display: flex;
-  flex-direction: column;
-  align-items: center; 
-  gap: 20px; 
+  flex-direction: column; 
+  align-items: flex-start; 
+  gap: 15px; 
   margin-top: 1.5rem;
+  width: 100%; 
+  box-sizing: border-box;
 }
 
 .rating-interact {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: #50c878;
-  padding: 15px 20px;
-  border-radius: 10px;
+  background-color: #50c878; 
+  padding: 15px 20px; 
+  border-radius: 10px; 
+  max-width: 100%; 
+  box-sizing: border-box;
 }
 
 .rating-heading {
   margin: 0 0 0.5rem 0;
-  color: #ffffff;
+  color: #ffffff; 
   font-family: 'Arial', 'Georgia';
 }
 
 .star-rating {
-  font-size: 2.5rem;
-  color: #555;
+  display: flex;
+  flex-direction: row;
+  gap: 5px; 
+  font-size: 2.5rem; 
+  color: #555; 
   cursor: pointer;
   user-select: none; 
   line-height: 1;
