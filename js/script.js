@@ -1,3 +1,34 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const ratingContainers = document.querySelectorAll('.star-rating');
+  var ratingContainers = document.querySelectorAll('.star-rating');
+
+  if (ratingContainers.length > 0) {
+    ratingContainers.forEach(container => {
+      var stars = container.querySelectorAll('.star');
+      var recipeId = container.getAttribute('data-recipe');
+
+      var storedRating = localStorage.getItem(`rating_${recipeId}`);
+      if (storedRating) {
+        updateStars(stars, storedRating);
+      }
+
+      stars.forEach(star => {
+        star.addEventListener('mouseover', function() {
+          var hoverValue = this.getAttribute('data-value');
+          addHoverState(stars, hoverValue);
+        });
+
+        star.addEventListener('mouseout', function() {
+          removeHoverState(stars);
+        });
+
+        star.addEventListener('click', function() {
+          var ratingValue = this.getAttribute('data-value');
+          updateStars(stars, ratingValue);
+          
+          localStorage.setItem(`rating_${recipeId}`, ratingValue);
+          console.log(`Recipe '${recipeId}' rated: ${ratingValue} stars`);
+        });
+      });
+    });
+  }
 });
