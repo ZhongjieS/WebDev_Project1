@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="js/script.js"></script>
 </head>
 <body>
 
@@ -45,8 +46,21 @@
         <li>Pour sauce over chicken and broccoli and cook until everything is glossy and coated.</li>
         <li>Serve over steamed rice.</li>
       </ol>
-      <img class="sticky-chicken" src="images/sticky_chicken.jpg" alt="Stir-fry chicken and broccoli in sticky sauce">
-      </section>
+      
+      <div class="rating-container">
+        <img class="sticky-chicken" src="images/sticky_chicken.jpg" alt="Stir-fry chicken and broccoli in sticky sauce">
+        <div class="rating-interact">
+          <h4 class="rating-heading">Please rate this recipe:</h4>
+          <div class="star-rating" data-recipe="sticky-chicken">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+          </div>
+        </div>
+      </div>
+    </section>
       
     <section>
       <h2>2. High-Protein Beijing Style Beef</h2>
@@ -67,7 +81,20 @@
         <li>Pour sauce into the pan and cook until thickened.</li>
         <li>Serve hot over a bowl of rice.</li>
       </ol>
-      <img class="beijin-beef" src="images/beijin_beef.jpg" alt="Stir-fry beijin style beef served with rice">
+
+      <div class="rating-container">
+        <img class="beijin-beef" src="images/beijin_beef.jpg" alt="Stir-fry beijin style beef served with rice">
+        <div class="rating-interact">
+          <h4 class="rating-heading">Please rate this recipe:</h4>
+          <div class="star-rating" data-recipe="beijin-beef">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+          </div>
+        </div>
+      </div>
     </section>  
     
     <section>
@@ -97,7 +124,21 @@
       </ul>
       <p>Here is a video showing how to make Mapo Tofu (intruction and ingredient may vary)</p>
       <iframe src="https://www.youtube.com/embed/YfGS3gGCa7Q" title="How to make Mapo Tofu / Spicy Tofu Dish with Pork in 30 Minutes"></iframe>
+
+      <div class="rating-container">
+        <div class="rating-interact">
+          <h4 class="rating-heading">Please rate this recipe:</h4>
+          <div class="star-rating" data-recipe="mapo-tofu">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   
 </body>
+</html>

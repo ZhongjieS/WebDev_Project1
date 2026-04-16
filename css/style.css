@@ -135,7 +135,6 @@ iframe {
   margin: 0 auto;
 }
 
-
 .ul-border{
   border-style: groove;
 }
@@ -146,3 +145,38 @@ li {
   overflow-wrap: break-word;
 }
 
+/*---Star Rating---*/
+.rating-container {
+  display: flex;
+  align-items: center; 
+  gap: 20px; 
+  margin-top: 1.5rem;
+}
+
+.rating-interact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #50c878;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.rating-heading {
+  margin: 0 0 0.5rem 0;
+  color: #ffffff;
+  font-family: 'Arial', 'Georgia';
+}
+
+.star-rating {
+  font-size: 2.5rem;
+  color: #555;
+  cursor: pointer;
+  user-select: none; 
+  line-height: 1;
+}
+
+.star-rating .star.hover,
+.star-rating .star.selected {
+  color: #ffc107; 
+}
