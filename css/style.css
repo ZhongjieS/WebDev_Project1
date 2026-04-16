@@ -182,6 +182,7 @@ li {
   background-color: #50c878; 
   padding: 15px 20px; 
   border-radius: 10px; 
+  width: fit-content;
   max-width: 100%; 
   box-sizing: border-box;
 }
@@ -194,9 +195,10 @@ li {
 
 .star-rating {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; 
+  flex-wrap: wrap; 
   gap: 5px; 
-  font-size: 2.5rem; 
+  font-size: 2rem;
   color: #555; 
   cursor: pointer;
   user-select: none; 
@@ -244,5 +246,9 @@ li {
   .rating-container {
     flex-direction: row;
     align-items: center;
+  }
+
+  .star-rating {
+    font-size: 2.5rem; 
   }
 }
