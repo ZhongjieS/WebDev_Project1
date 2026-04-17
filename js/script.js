@@ -1,3 +1,12 @@
+/*Interactive Map*/
+
+window.initMap = function() {
+  var mapElement = document.getElementById("map-container");
+  
+};
+
+/*Recipe Star Rating*/
+
 document.addEventListener('DOMContentLoaded', () => {
   var ratingContainers = document.querySelectorAll('.star-rating');
 
