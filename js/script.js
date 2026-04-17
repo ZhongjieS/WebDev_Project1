@@ -2,7 +2,7 @@
 
 window.initMap = function() {
   var mapElement = document.getElementById("map-container");
-  
+
   var campusCenter = { lat: 41.8353, lng: -87.6258 };
     
     var map = new google.maps.Map(mapElement, {
@@ -32,6 +32,26 @@ window.initMap = function() {
         description: "The main student center. The train runs right through the roof!"
       }
     ];
+
+    var infoWindow = new google.maps.InfoWindow();
+
+    campusLocations.forEach(location => {
+      var marker = new google.maps.Marker({
+        position: location.coords,
+        map: map,
+        title: location.title
+      });
+
+      marker.addListener("click", () => {
+        var contentString = "<div class='info-window-content'>" + 
+                            "<h3>" + location.title + "</h3>" + 
+                            "<p>" + location.description + "</p>" + 
+                            "</div>";
+        infoWindow.setContent(contentString);
+        infoWindow.open(map, marker);
+      });
+    });
+
 };
 
 /*Recipe Star Rating*/

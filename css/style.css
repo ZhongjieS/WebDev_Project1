@@ -260,3 +260,12 @@ li {
     font-size: 2.5rem; 
   }
 }
+
+.info-window-content {
+  color: black;
+  padding: 5px;
+}
+
+.info-window-content h3 {
+  margin-top: 0;
+}
