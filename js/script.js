@@ -51,6 +51,9 @@ window.initMap = function() {
         infoWindow.open(map, marker);
       });
     });
+  
+  var trafficLayer = new google.maps.TrafficLayer();
+    trafficLayer.setMap(map);
 
 };
 
