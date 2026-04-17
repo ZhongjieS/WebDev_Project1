@@ -3,6 +3,35 @@
 window.initMap = function() {
   var mapElement = document.getElementById("map-container");
   
+  var campusCenter = { lat: 41.8353, lng: -87.6258 };
+    
+    var map = new google.maps.Map(mapElement, {
+      zoom: 15,
+      center: campusCenter,
+    });
+
+    var campusLocations = [
+      {
+        title: "IIT Tower",
+        coords: { lat: 41.8315, lng: -87.6268 },
+        description: "Illinois Tech's 19-story administrative and academic tower."
+      },
+      {
+        title: "John T. Rettaliata Engineering Center",
+        coords: { lat: 41.8373, lng: -87.6275 },
+        description: "Where the engineering magic happens!"
+      },
+      {
+        title: "Paul V. Galvin Library",
+        coords: { lat: 41.8340, lng: -87.6276 },
+        description: "The main library for late-night study and research."
+      },
+      {
+        title: "McCormick Tribune Campus Center (MTCC)",
+        coords: { lat: 41.8353, lng: -87.6258 },
+        description: "The main student center. The train runs right through the roof!"
+      }
+    ];
 };
 
 /*Recipe Star Rating*/
