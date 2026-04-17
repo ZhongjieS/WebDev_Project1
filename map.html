@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Study Spots</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="recipe.html">Recipes</a></li>
+        <li><a href="map.html">Map</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="index-main">
+    <header>
+      <h1 class="index-h1">My Favorite Study Spots at IIT</h1>
+    </header>
+
+    <section>
+      <h2>Interactive Campus Map</h2>
+      <p>Explore the markers below to see where I like to study. Click each one for more details!</p>
+      
+      <div id="map-container"></div>
+    </section>
+  </main>
+
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-6JMaYWlP_XWIPdsOqoUP02CQj4yreiU&callback=initMap"></script>
+</body>
+</html>
